@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/NewWordleGAme/static/css/main.93e08a2f.css",
+    "main.js": "/NewWordleGAme/static/js/main.ff4cbfa1.js",
+    "index.html": "/NewWordleGAme/index.html",
+    "main.93e08a2f.css.map": "/NewWordleGAme/static/css/main.93e08a2f.css.map",
+    "main.ff4cbfa1.js.map": "/NewWordleGAme/static/js/main.ff4cbfa1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93e08a2f.css",
+    "static/js/main.ff4cbfa1.js"
+  ]
+}
