@@ -17,7 +17,7 @@ export default function Wordle({ solution }) {
       setTimeout(() => setShowModal(true), 2000)
       window.removeEventListener('keyup', handleKeyup)
     }
-    if (turn > 5) {
+    if (turn > 8) {
       setTimeout(() => setShowModal(true), 2000)
       window.removeEventListener('keyup', handleKeyup)
     }
