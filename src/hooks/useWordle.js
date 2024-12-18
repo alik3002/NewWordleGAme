@@ -3,7 +3,7 @@ import { useState } from 'react'
 const useWordle = (solution) => {
   const [turn, setTurn] = useState(0) 
   const [currentGuess, setCurrentGuess] = useState('')
-  const [guesses, setGuesses] = useState([...Array(6)]) 
+  const [guesses, setGuesses] = useState([...Array(8)]) 
   const [history, setHistory] = useState([]) 
   const [isCorrect, setIsCorrect] = useState(false)
   const [usedKeys, setUsedKeys] = useState({}) 
@@ -74,7 +74,7 @@ const useWordle = (solution) => {
   const handleKeyup = ({ key }) => {
     if (key === 'Enter') {
       
-      if (turn > 5) {
+      if (turn > 8) {
         console.log('you used all your guesses!')
         return
       }
@@ -84,7 +84,7 @@ const useWordle = (solution) => {
         return
       }
       
-      if (currentGuess.length !== 5) {
+      if (currentGuess.length !== 8) {
         console.log('word must be 5 chars.')
         return
       }
@@ -96,7 +96,7 @@ const useWordle = (solution) => {
       return
     }
     if (/^[A-Za-z]$/.test(key)) {
-      if (currentGuess.length < 5) {
+      if (currentGuess.length < 8) {
         setCurrentGuess(prev => prev + key)
       }
     }
